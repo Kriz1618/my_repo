@@ -1,0 +1,47 @@
+<!DOCTYPE html><html><head>
+
+<title>Calculator</title><meta charset="utf-8">
+<style>
+    h1 {
+        color: darkslategray;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 1em;
+    }
+    body {
+        float: left;
+        align-content: center;
+    }
+    footer {
+        font-size: 0.5em;
+        color: lightslategray;
+        text-align: center;
+    }
+</style>
+<script type="text/javascript">
+
+function cube() {
+
+var num = document.getElementById("n1");
+
+num.value = Math.pow(num.value, 3);
+
+}
+
+</script>
+
+</head>
+
+<body>
+<h1>Calculadora de Christian Casaran Palacios </h1>
+Number:
+
+<input type="text" id="n1"><p>
+
+<button onclick="cube()"> x^3 </button>
+
+</body>
+<footer>
+    <hr> Curso Git 2018
+</footer>
+
+</html>
