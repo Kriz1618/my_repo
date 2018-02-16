@@ -7,23 +7,29 @@
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 1em;
     }
+		div {
+			float: left;
+			padding: 0.4em;
+		}
     body {
         float: left;
         align-content: center;
     }
-    footer {
-        font-size: 0.5em;
-        color: lightslategray;
-        text-align: center;
-    }
+    
 </style>
 <script type="text/javascript">
 
 function cube() {
 
-var num = document.getElementById("n1");
+    var num = document.getElementById("n1");
+    num.value = Math.pow(num.value, 3);
 
-num.value = Math.pow(num.value, 3);
+}
+
+function fourPow() {
+
+    var num = document.getElementById("n1");
+    num.value = Math.pow(num.value, 4);
 
 }
 
@@ -41,16 +47,16 @@ num.value = Math.sin(num.value);
 
 <body>
 <h1>Calculadora de Christian Casaran Palacios </h1>
-Number:
+<hr>Number:
 
 <input type="text" id="n1"><p>
+<div>
+    <button onclick="cube()"> x^3 </button>
+    <button onclick="fourPow()"> x^4 </button>
+    <button onclick="sin()"> SIN </button>    
+</div>
 
-<button onclick="cube()"> x^3 </button>
-<button onclick="sin()"> SIN </button>
+
 
 </body>
-<footer>
-    <hr> Curso Git 2018
-</footer>
-
 </html>
